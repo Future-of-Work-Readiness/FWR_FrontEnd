@@ -39,7 +39,7 @@ export default function PeerBenchmarkingPage(): JSX.Element {
 
 		try {
 			const response = await fetch(
-				`${API_BASE_URL}/users/${currentUser.id}/peer-benchmark`
+				`${API_BASE_URL}/users/users/${currentUser.id}/peer-benchmark`
 			);
 			const result = await response.json();
 
